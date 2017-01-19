@@ -1,0 +1,10 @@
+<div class="customHotgraphic-inner component-inner">
+    {{> component this}}
+    <div class="customHotgraphic-widget component-widget clearfix {{#unless _isSubmitted}}before-submit{{/unless}} {{#unless _isEnabled}} disabled {{#if _isComplete}} complete submitted show-user-answer {{#if _isCorrect}}correct{{/if}} {{/if}} {{/unless}}">
+        <img class="customHotgraphic-background-image" src="{{_backgroundImage.url}}">
+        {{#each _items}}
+        <div class="customHotgraphic-item component-item-text-color component-item {{#unless ../_isEnabled}} {{#if _isCorrect}}correct{{else}}incorrect{{/if}} {{/unless}} item-{{@index}} {{#if _isSelected}}selected{{/if}}" data-id="{{@index}}" style="width:{{_width}}%;height: {{_height}}%;top:{{{_top}}}%; left:{{{_left}}}%;" aria-labelledby="{{../_id}}-{{@index}}-aria">
+        </div>
+        {{/each}}
+    </div>
+</div>

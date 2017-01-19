@@ -1,0 +1,47 @@
+.customHotgraphic-inner {
+  .customHotgraphic-item {
+    position: absolute;
+    display: block;
+    color: @item-text-color;
+    border: 4px solid @item-border-color;
+    z-index: 100;
+    cursor: pointer;
+
+    &.selected {
+        color: @secondary-color;
+        border: @secondary-color 4px solid;
+        content:" "; /*IE8 fix*/
+    }
+    
+  }
+
+  .customHotgraphic-background-image{
+    width:100%
+  }
+}
+
+.customHotgraphic-widget {
+  position: relative;
+}
+
+.no-touch {
+  .customHotgraphic-inner {
+    .customHotgraphic-widget {
+      &.before-submit {
+        .customHotgraphic-item {
+          &:hover {
+            border:@item-hover-color 4px solid;
+          }
+        }
+      }
+
+      &.disabled {
+        .customHotgraphic-item {
+          &:hover {
+            cursor: default;
+          }
+        }
+      }
+    }
+  }
+}
