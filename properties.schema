@@ -210,6 +210,24 @@
             "inputType": "Number",
             "validators": ["required", "number"],
             "help": "Top position of pin"
+          },
+          "_width": {
+            "type":"number",
+            "required":true,
+            "default":0,
+            "title": "Hot spot Width",
+            "inputType": "Number",
+            "validators": ["required", "number"],
+            "help": "Width of hot spot area"
+          },
+          "_height": {
+            "type":"number",
+            "required":true,
+            "default":0,
+            "title": "Hot spot Height",
+            "inputType": "Number",
+            "validators": ["required", "number"],
+            "help": "Height of hot spot area"
           }
         }
       }

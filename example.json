@@ -1,60 +1,53 @@
 {
-  "_id":"c-145",
-  "_parentId":"b-80",
+  "_id":"c-46",
+    "_parentId":"b-36",
   "_type":"component",
-  "_component":"hotSpot",
+  "_component":"customHotgraphic",
   "_classes":"",
   "_layout":"full",
   "_attempts":2,
   "_questionWeight":1,
   "_isRandom":false,
   "_selectable":3,
-  "title": "HotSpot",
-  "displayTitle": "HotSpot",
+  "title": "Custom Hotgraphic",
+  "displayTitle": "Custom Hotgraphic",
   "body": "Which of the following options would you consider to be correct?",
   "instruction": "",
   "_backgroundImage": {
-    "url": "course/en/images/devices.png"
+    "large": "course/en/images/single_width.jpg",
+    "small": "course/en/images/single_width.jpg"
   },
+  "restrictCompletion":"allitems",
   "_items": [
       {
       "_shouldBeSelected":false,
       "_text":"Text for option 1",
       "_graphic": {
         "alt": "Alt text for option 1",
-        "large": "course/en/images/gqcq-1-large.gif",
-        "small": "course/en/images/gqcq-1-small.gif"
+        "large": "course/en/images/GMCQ_option.png",
+        "small": "course/en/images/GMCQ_option.png"
       },
-      "_width": 12,
-      "_height": 12,
-      "_top": 30,
-      "_left": 17.5
+      "_top": 8,
+      "_left": 39.5,
+      "_mobileTop": 7.2,
+      "_mobileLeft": 54.2
+      
     },
     {
       "_shouldBeSelected":false,
       "_text":"Text for option 2",
       "_graphic": {
         "alt": "Alt text for option 2",
-        "large": "course/en/images/gqcq-2-large.gif",
-        "small": "course/en/images/gqcq-2-small.gif"
+        "large": "course/en/images/GMCQ_option.png",
+        "small": "course/en/images/GMCQ_option.png"
       },
-      "_width": 10.8,
-      "_height": 22,
-      "_top": 49,
-      "_left": 46
-    },
-    {
-      "_shouldBeSelected":true,
-      "_text":"Text for option 2",
-      "_graphic": {
-        "alt": "Alt text for option 3",
-        "large": "course/en/images/gqcq-1-large.gif",
-        "small": "course/en/images/gqcq-1-small.gif"
-      },
-      "_width": 13.6,
-      "_height": 11,
-      "_top": 45.3,
-      "_left": 70.4
+      "_top": 12,
+      "_left": 58,
+      "_mobileTop": 7.2,
+      "_mobileLeft": 54.2
     }
-  ]
+  ],
+  "_pageLevelProgress": {
+    "_isEnabled": true
+  }
 }
