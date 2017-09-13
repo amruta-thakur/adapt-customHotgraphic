@@ -1,0 +1,108 @@
+.customHotgraphic-inner {
+  .customHotgraphic-item {
+    position: absolute;
+    display: block;
+    color: @item-text-color;
+    //border: 4px solid @item-border-color;
+    z-index: 100;
+    cursor: pointer;
+
+    &.selected {
+        color: @item-color-visited;
+        content:" "; /*IE8 fix*/
+        border-color: @item-color-visited;
+        cursor:default;
+    }
+
+    .customHotgraphic-graphic-pin {
+      display: block;
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      background-color: @item-text-color;
+      border-radius:50%;
+      text-decoration: none;
+      &.visited {
+        .customHotgraphic-graphic-pin-icon {
+          color: @item-color-visited;
+        }
+      }
+      .no-touch &:hover {
+        .customHotgraphic-graphic-pin-icon {
+          color: @item-color-hover;
+        }
+      }
+    }
+
+    .customHotgraphic-graphic-pin-icon {
+      color: @item-color;
+      font-size: (@icon-size*2);
+      width:auto;
+      height:auto;
+    }
+    
+  }
+
+  .customHotgraphic-background-image{
+    width:100%
+  }
+}
+
+.customHotgraphic-widget {
+  position: relative;
+}
+
+.no-touch {
+  .customHotgraphic-inner {
+    .customHotgraphic-widget {
+      &.before-submit {
+        .customHotgraphic-item {
+          &:hover {
+            //border:@item-hover-color 4px solid;
+          }
+          .customHotgraphic-graphic-pin-icon {
+            &:hover {
+              color: @item-color-hover;
+            }
+          }
+        }
+      }
+
+      &.disabled {
+        .customHotgraphic-item {
+          &:hover {
+            cursor: default;
+          }
+          .customHotgraphic-graphic-pin-icon {
+            &:hover {
+              cursor: default;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.nextModal{
+  width: 5%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 99;
+  background-color: @blue;
+  padding: @item-margin;
+  color: @button-text-color;
+  text-decoration: none;
+  text-align: center;
+}
+
+@media (max-width:480px){
+    .nextModal {
+      width: 8%;
+  }
+}
+@media (max-width:368px){
+    .nextModal {
+      width: 10%;
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "_id":"c-46",
+    "_parentId":"b-36",
+  "_type":"component",
+  "_component":"customHotgraphic",
+  "_classes":"",
+  "_layout":"full",
+  "_attempts":2,
+  "_questionWeight":1,
+  "_isRandom":false,
+  "_selectable":3,
+  "title": "Custom Hotgraphic",
+  "displayTitle": "Custom Hotgraphic",
+  "body": "Which of the following options would you consider to be correct?",
+  "instruction": "",
+  "_backgroundImage": {
+    "large": "course/en/images/single_width.jpg",
+    "small": "course/en/images/single_width.jpg"
+  },
+  "restrictCompletion":"allitems",
+  "_items": [
+      {
+      "_shouldBeSelected":false,
+      "_text":"Text for option 1",
+      "_graphic": {
+        "alt": "Alt text for option 1",
+        "large": "course/en/images/GMCQ_option.png",
+        "small": "course/en/images/GMCQ_option.png"
+      },
+      "_top": 8,
+      "_left": 39.5,
+      "_mobileTop": 7.2,
+      "_mobileLeft": 54.2
+      
+    },
+    {
+      "_shouldBeSelected":false,
+      "_text":"Text for option 2",
+      "_graphic": {
+        "alt": "Alt text for option 2",
+        "large": "course/en/images/GMCQ_option.png",
+        "small": "course/en/images/GMCQ_option.png"
+      },
+      "_top": 12,
+      "_left": 58,
+      "_mobileTop": 7.2,
+      "_mobileLeft": 54.2
+    }
+  ],
+  "_pageLevelProgress": {
+    "_isEnabled": true
+  }
+}
